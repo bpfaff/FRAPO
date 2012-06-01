@@ -1,0 +1,11 @@
+Package: FRAPO
+Version: 0.3-5
+Date: 2012-05-03
+Title: Financial Risk Modelling and Portfolio Optimisation with R
+Author: Bernhard Pfaff <bernhard@pfaffikus.de>
+Maintainer: Bernhard Pfaff <bernhard@pfaffikus.de>
+Depends: R (>= 2.11), methods, quadprog, Rglpk, timeSeries
+Suggests: xts, zoo
+Description: Accompanying package of the book 'Financial Risk Modelling and Portfolio Optimisation with R'. The data sets used in the book are contained in this package.   
+LazyData: TRUE 
+License: GPL (>= 2)

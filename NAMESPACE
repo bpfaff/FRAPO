@@ -1,0 +1,65 @@
+useDynLib(FRAPO)
+
+import(methods)
+
+importClassesFrom(timeSeries, timeSeries)
+importMethodsFrom(timeSeries, timeSeries)
+importFrom(graphics, plot)
+importFrom(stats, update)
+importFrom(utils, head)
+importFrom(utils, tail)
+
+export(capser,
+       cr,
+       dr,
+       mrc,
+       PAveDD,
+       PCDaR,
+       PERC,
+       PGMV,
+       PMaxDD,
+       PMD,
+       PMinCDaR,
+       PMTD,
+       returnconvert,
+       returnseries,
+       rhow,
+       Socp,
+       SocpControl,
+       SocpPhase1,
+       SocpPhase2,
+       sqrm,
+       tdc,
+       trdbilson,
+       trdbinary,
+       trdes,
+       trdhp,
+       trdsma,
+       trdwma,
+       runEx,
+       editEx,
+       saveEx,
+       showEx,
+       listEx)
+
+exportMethods(capser,
+              DrawDowns,
+              plot,
+              returnconvert,
+              returnseries,
+              show,
+              Solution,
+              trdbilson,
+              trdbinary,
+              trdes,
+              trdhp,
+              trdsma,
+              trdwma,
+              update,
+              Weights)
+
+exportClasses(PortDD,
+              PortAdd,
+              PortCdd,
+              PortMdd,
+              PortSol)

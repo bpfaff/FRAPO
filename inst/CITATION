@@ -1,0 +1,17 @@
+citHeader("To cite the FRAPO package in publications use:")
+
+citFooter("For BibTex versions of citations use: toBibtex(citation('FRAPO'))")
+
+citEntry(entry="Book",
+         title = "Financial Risk Modelling and Portfolio Optimisation with R",
+         author = personList(as.person("B. Pfaff")),
+	 publisher = "John Wiley & Sons, Ltd",
+         address      = "London",
+         year         = 2012,
+         url          = "http://www.pfaffikus.de",
+         
+         textVersion = 
+         paste("Pfaff, B. (2008)", 
+               "Financial Risk Modelling and Portfolio Optimisation with R,",
+               "John Wiley & Sons Ltd, London.")
+)

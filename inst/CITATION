@@ -7,11 +7,11 @@ citEntry(entry="Book",
          author = personList(as.person("B. Pfaff")),
 	 publisher = "John Wiley & Sons, Ltd",
          address      = "London",
-         year         = 2012,
+         year         = 2013,
          url          = "http://www.pfaffikus.de",
          
          textVersion = 
-         paste("Pfaff, B. (2008)", 
+         paste("Pfaff, B. (2013)", 
                "Financial Risk Modelling and Portfolio Optimisation with R,",
                "John Wiley & Sons Ltd, London.")
 )

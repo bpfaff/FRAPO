@@ -1,6 +1,6 @@
 Package: FRAPO
-Version: 0.3-6
-Date: 2012-12-04
+Version: 0.3-7
+Date: 2013-06-06
 Title: Financial Risk Modelling and Portfolio Optimisation with R
 Authors@R: c(person("Bernhard", "Pfaff", email = "bernhard@pfaffikus.de", role = c("aut", "cre")), person("Miguel Sousa", "Lobo", email = "mlobo@isl.stanford.edu", role = "ctb", comment = "SOCP"), person("Lieven", "Vandenberge", email = "vandenbe@isl.stanford.edu", role = "ctb", comment = "SOCP"), person("Stephen", "Boyd", email = "boyd@isl.stanford.edu", role = "ctb", comment = "SOCP"), person("Herve", "Lebret", role = "ctb", comment = "SOCP"))
 Depends: R (>= 2.11), methods, quadprog, Rglpk, timeSeries

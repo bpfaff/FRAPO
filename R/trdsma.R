@@ -74,25 +74,3 @@ setMethod(f = "trdsma",
             return(trd)
           }
 )
-## for class xts
-setMethod(f = "trdsma",
-          signature = c(y = "xts"),
-          definition = function(y, n.periods, trim = FALSE){
-            yc <- as.matrix(coredata(y))
-            trd <- trdsma(yc, n.periods = n.periods, trim = FALSE)
-            attributes(trd) <- attributes(y)
-            if(trim) trd <- window(trd, start = index(y)[n.periods])
-            return(trd)
-          }
-)
-## for class zoo
-setMethod(f = "trdsma",
-          signature = c(y = "zoo"),
-          definition = function(y, n.periods, trim = FALSE){
-            yc <- as.matrix(coredata(y))
-            trd <- trdsma(yc, n.periods = n.periods, trim = FALSE)
-            attributes(trd) <- attributes(y)
-            if(trim) trd <- window(trd, start = index(y)[n.periods])
-            return(trd)
-          }
-)

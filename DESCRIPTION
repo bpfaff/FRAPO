@@ -1,10 +1,14 @@
 Package: FRAPO
-Version: 0.3-8
-Date: 2013-06-15
+Version: 0.4-0
+Date: 2016-08-08
 Title: Financial Risk Modelling and Portfolio Optimisation with R
-Authors@R: c(person("Bernhard", "Pfaff", email = "bernhard@pfaffikus.de", role = c("aut", "cre")), person("Miguel Sousa", "Lobo", email = "mlobo@isl.stanford.edu", role = "ctb", comment = "SOCP"), person("Lieven", "Vandenberghe", email = "vandenbe@isl.stanford.edu", role = "ctb", comment = "SOCP"), person("Stephen", "Boyd", email = "boyd@isl.stanford.edu", role = "ctb", comment = "SOCP"), person("Herve", "Lebret", role = "ctb", comment = "SOCP"))
-Depends: R (>= 2.11), methods, quadprog, Rglpk, timeSeries
-Suggests: xts, zoo, Rsolnp
-Description: Accompanying package of the book 'Financial Risk Modelling and Portfolio Optimisation with R'. The data sets used in the book are contained in this package.   
-LazyData: TRUE 
-License: GPL (>= 2)
+Authors@R: person("Bernhard", "Pfaff", email = "bernhard@pfaffikus.de", role = c("aut", "cre"))
+Depends: R (>= 3.1.3), methods, cccp, Rglpk, timeSeries
+Description: Accompanying package of the book 'Financial Risk Modelling
+        and Portfolio Optimisation with R', second edition. The data sets used in the book are contained in this package.
+LazyData: TRUE
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2016-08-17 07:33:15 UTC; pfaffb
+Author: Bernhard Pfaff [aut, cre]
+Maintainer: Bernhard Pfaff <bernhard@pfaffikus.de>

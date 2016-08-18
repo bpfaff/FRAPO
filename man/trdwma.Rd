@@ -8,8 +8,6 @@
 \alias{trdwma,numeric-method}
 \alias{trdwma,timeSeries-method}
 \alias{trdwma,ts-method}
-\alias{trdwma,xts-method}
-\alias{trdwma,zoo-method}
 \title{
  Weighted Moving Average
 }
@@ -23,7 +21,7 @@ trdwma(y, weights, trim = FALSE)
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
   \item{weights}{Numeric, a vector containing the weights.}
   \item{trim}{Logical, if \code{FALSE} (the default) the first
   value is set to \code{NA}, otherwise the object is trimmed by the

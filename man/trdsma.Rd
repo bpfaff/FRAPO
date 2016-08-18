@@ -8,8 +8,6 @@
 \alias{trdsma,numeric-method}
 \alias{trdsma,timeSeries-method}
 \alias{trdsma,ts-method}
-\alias{trdsma,xts-method}
-\alias{trdsma,zoo-method}
 \title{
   Simple Moving Average
 }
@@ -23,7 +21,7 @@ trdsma(y, n.periods, trim = FALSE)
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
   \item{n.periods}{Integer, the number of periods to be included in the
   calculation of the simple moving average.}
   \item{trim}{Logical, if \code{FALSE} (the default) the first

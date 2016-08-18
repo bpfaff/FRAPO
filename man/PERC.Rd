@@ -10,14 +10,15 @@
 }
 
 \usage{
-PERC(Sigma, par = NULL, percentage = TRUE, ...)
+PERC(Sigma, par = NULL, percentage = TRUE, optctrl = ctrl(), ...)
 }
 
 \arguments{
   \item{Sigma}{Matrix, the variance-covariance matrix of asset returns}
   \item{par}{Vector, the initial values of the weights.}
   \item{percentage}{Logical, whether the weights shall be returned as
-  decimals or percentages (default).}
+    decimals or percentages (default).}
+  \item{optctrl}{Object of class \code{Rcpp_CTRL}.}
   \item{\dots}{Ellipsis argument is passed down to \code{nlminb()}.}
 }
 
@@ -47,7 +48,7 @@ PERC(Sigma, par = NULL, percentage = TRUE, ...)
 }
 
 \seealso{
-  \code{"\linkS4class{PortSol}"}, \code{\link{PERC2}}
+  \code{"\linkS4class{PortSol}"}
 }
 
 \examples{

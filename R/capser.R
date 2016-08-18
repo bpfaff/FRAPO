@@ -67,23 +67,3 @@ setMethod(f = "capser",
             return(cs)
           }
 )
-## for class xts
-setMethod(f = "capser",
-          signature = c(y = "xts"),
-          definition = function(y, min, max){
-            yc <- as.matrix(coredata(y))
-            cs <- apply(yc, 2, capser, min = min, max = max)
-            attributes(cs) <- attributes(y)
-            return(cs)
-          }
-)
-## for class zoo
-setMethod(f = "capser",
-          signature = c(y = "zoo"),
-          definition = function(y, min, max){
-            yc <- as.matrix(coredata(y))
-            cs <- apply(yc, 2, capser, min = min, max = max)            
-            attributes(cs) <- attributes(y)
-            return(cs)
-          }
-)

@@ -11,13 +11,14 @@
 }
 
 \usage{
-PGMV(Returns, percentage = TRUE, ...)
+PGMV(Returns, percentage = TRUE, optctrl = ctrl(), ...)
 }
 
 \arguments{
   \item{Returns}{A rectangular array of return data.}
   \item{percentage}{Logical, whether the weights shall be returned as
-  decimals or percentages (default).}
+    decimals or percentages (default).}
+  \item{optctrl}{Object of class \code{Rcpp_CTRL}.}
   \item{\dots}{Arguments are passed down to \code{cov}.}
 }
 
@@ -30,7 +31,7 @@ PGMV(Returns, percentage = TRUE, ...)
 }
 
 \note{
-   The optimisation is conducted by calling \code{solve.QP()}. 
+   The optimisation is conducted by calling \code{cccp()}. 
 }
 
 \seealso{

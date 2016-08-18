@@ -8,8 +8,6 @@
 \alias{trdbinary,numeric-method}
 \alias{trdbinary,timeSeries-method}
 \alias{trdbinary,ts-method}
-\alias{trdbinary,xts-method}
-\alias{trdbinary,zoo-method}
 \title{
   Binary Trend
 }
@@ -22,7 +20,7 @@ trdbinary(y)
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
 }
 
 \details{

@@ -62,23 +62,3 @@ setMethod(f = "trdbilson",
             return(trd)
           }
 )
-## for class xts
-setMethod(f = "trdbilson",
-          signature = c(y = "xts"),
-          definition = function(y, exponent){
-            yc <- as.matrix(coredata(y))
-            trd <- apply(yc, 2, trdbilson, exponent = exponent)
-            attributes(trd) <- attributes(y)
-            return(trd)
-          }
-)
-## for class zoo
-setMethod(f = "trdbilson",
-          signature = c(y = "zoo"),
-          definition = function(y, exponent){
-            yc <- as.matrix(coredata(y))
-            trd <- apply(yc, 2, trdbilson, exponent = exponent)            
-            attributes(trd) <- attributes(y)
-            return(trd)
-          }
-)

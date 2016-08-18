@@ -11,7 +11,8 @@
 }
 
 \usage{
-PMTD(Returns, method = c("EmpTC", "EVT"), k = NULL, percentage = TRUE, ...)
+PMTD(Returns, method = c("EmpTC", "EVT"), k = NULL, percentage = TRUE,
+     optctrl = ctrl(),...)
 }
 
 \arguments{
@@ -20,7 +21,8 @@ PMTD(Returns, method = c("EmpTC", "EVT"), k = NULL, percentage = TRUE, ...)
   \item{k}{Integer, the threshold value for the order statistic. If left
   \code{NULL}, then \code{k = sqrt(nrow(x))} is used.}
   \item{percentage}{Logical, whether the weights shall be returned as
-  decimals or percentages (default).}
+    decimals or percentages (default).}
+  \item{optctrl}{Object of class \code{Rcpp_CTRL}.}
   \item{\dots}{Arguments are passed down to \code{rank}.}
 }
 
@@ -40,7 +42,7 @@ PMTD(Returns, method = c("EmpTC", "EVT"), k = NULL, percentage = TRUE, ...)
 }
 
 \note{
-  The optimisation is conducted by calling \code{solve.QP()}. 
+  The optimisation is conducted by calling \code{cccp()}. 
 }
 
 \seealso{

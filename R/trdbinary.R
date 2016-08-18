@@ -60,23 +60,3 @@ setMethod(f = "trdbinary",
             return(trd)
           }
 )
-## for class xts
-setMethod(f = "trdbinary",
-          signature = c(y = "xts"),
-          definition = function(y){
-            yc <- as.matrix(coredata(y))
-            trd <- apply(yc, 2, trdbinary)
-            attributes(trd) <- attributes(y)
-            return(trd)
-          }
-)
-## for class zoo
-setMethod(f = "trdbinary",
-          signature = c(y = "zoo"),
-          definition = function(y){
-            yc <- as.matrix(coredata(y))
-            trd <- apply(yc, 2, trdbinary)            
-            attributes(trd) <- attributes(y)
-            return(trd)
-          }
-)

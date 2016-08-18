@@ -84,25 +84,3 @@ setMethod(f = "returnseries",
             return(ret)
           }
 )
-## for class xts
-setMethod(f = "returnseries",
-          signature = c(y = "xts"),
-          definition = function(y, method = c("continuous", "discrete"), percentage = TRUE, trim = FALSE, compound = FALSE){
-            yc <- as.matrix(coredata(y))
-            ret <- returnseries(yc, method = method, percentage = percentage, trim = FALSE, compound = compound)
-            attributes(ret) <- attributes(y)
-            if(trim) ret <- window(ret, start = index(y)[2])
-            return(ret)
-          }
-)
-## for class zoo
-setMethod(f = "returnseries",
-          signature = c(y = "zoo"),
-          definition = function(y, method = c("continuous", "discrete"), percentage = TRUE, trim = FALSE, compound = FALSE){
-            yc <- as.matrix(coredata(y))
-            ret <- returnseries(yc, method = method, percentage = percentage, trim = FALSE, compound = compound)
-            attributes(ret) <- attributes(y)
-            if(trim) ret <- window(ret, start = index(y)[2])
-            return(ret)
-          }
-)

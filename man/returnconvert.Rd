@@ -8,8 +8,6 @@
 \alias{returnconvert,numeric-method}
 \alias{returnconvert,timeSeries-method}
 \alias{returnconvert,ts-method}
-\alias{returnconvert,xts-method}
-\alias{returnconvert,zoo-method}
 \title{
   Convert Returns from continuous to discrete and vice versa
 }
@@ -23,7 +21,7 @@ returnconvert(y, convdir = c("cont2disc", "disc2cont"), percentage = TRUE)
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
   \item{convdir}{Character, the type of return conversion.}
   \item{percentage}{Logical, if \code{TRUE} (the default) the returns,
   \code{y}, are expressed as percentages.}

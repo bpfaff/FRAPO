@@ -8,8 +8,6 @@
 \alias{trdhp,numeric-method}
 \alias{trdhp,timeSeries-method}
 \alias{trdhp,ts-method}
-\alias{trdhp,xts-method}
-\alias{trdhp,zoo-method}
 \title{
   Hodrick-Prescott Filter
 }
@@ -22,7 +20,7 @@ trdhp(y, lambda)
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
   \item{lambda}{Numeric, the value for \eqn{\lambda} in the equation below.}
 }
 

@@ -8,8 +8,6 @@
 \alias{trdbilson,numeric-method}
 \alias{trdbilson,timeSeries-method}
 \alias{trdbilson,ts-method}
-\alias{trdbilson,xts-method}
-\alias{trdbilson,zoo-method}
 \title{
   Bilson Trend
 }
@@ -22,7 +20,7 @@ trdbilson(y, exponent)
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
   \item{exponent}{Numeric, the value for \eqn{\alpha} in the equation below.}
 }
 

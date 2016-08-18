@@ -13,7 +13,7 @@
 \format{
   A data frame with 265 weekly observations of 226 members of the Milano
   Indice Borsa Telematica index. The sample starts at 2003-03-03 and
-  ends in 2008-03-24.     
+  ends in 2008-03-24.
 }
 
 \details{
@@ -24,7 +24,7 @@
 }
 
 \source{
-  \url{http://w3.uniroma1.it/Tardella/datasets.html}\cr
+  \url{http://host.uniroma3.it/docenti/cesarone/DataSets.htm}\cr
   \url{http://finance.yahoo.com/}
 }
 
@@ -33,7 +33,7 @@
   problems in practice: a comparison between linear and quadratic
   optimization models, Working Paper, Universita degli Studi Roma Tre,
   Universita Telematica delle Scienze Umane and Universita di Roma, July
-  2010.\cr 
+  2010.\cr
   \url{http://arxiv.org/ftp/arxiv/papers/1105/1105.3594.pdf}
 }
 

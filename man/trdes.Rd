@@ -8,8 +8,6 @@
 \alias{trdes,numeric-method}
 \alias{trdes,timeSeries-method}
 \alias{trdes,ts-method}
-\alias{trdes,xts-method}
-\alias{trdes,zoo-method}
 \title{
   Exponentially Smoothed Trend
 }
@@ -22,7 +20,7 @@ trdes(y, lambda, init = NULL)
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
   \item{lambda}{Numeric, the smoothing parameter for \eqn{\lambda} in
     the equation below. The value for the parameter must be in the
   interval \eqn{0 < \lambda < 1}.}

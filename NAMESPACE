@@ -1,13 +1,8 @@
-useDynLib(FRAPO)
+import(methods, cccp, Rglpk, timeSeries)
 
-import(methods)
-
-importClassesFrom(timeSeries, timeSeries)
-importMethodsFrom(timeSeries, timeSeries)
-importFrom(graphics, plot)
-importFrom(stats, update)
-importFrom(utils, head)
-importFrom(utils, tail)
+importFrom("graphics", "abline")
+importFrom("stats", "cov", "cov2cor", "embed", "na.fail")
+importFrom("utils", "combn", "file.edit")
 
 export(capser,
        cr,
@@ -16,7 +11,6 @@ export(capser,
        PAveDD,
        PCDaR,
        PERC,
-       PERC2,
        PGMV,
        PMaxDD,
        PMD,
@@ -25,10 +19,6 @@ export(capser,
        returnconvert,
        returnseries,
        rhow,
-       Socp,
-       SocpControl,
-       SocpPhase1,
-       SocpPhase2,
        sqrm,
        tdc,
        trdbilson,

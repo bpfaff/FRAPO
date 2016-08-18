@@ -97,35 +97,3 @@ setMethod(f = "trdes",
             return(trd)
           }
 )
-## for class xts
-setMethod(f = "trdes",
-          signature = c(y = "xts"),
-          definition = function(y, lambda, init = NULL){
-            yc <- as.matrix(coredata(y))
-            if(is.null(init)){
-              trd <- trdes(yc, lambda = lambda)
-            } else {
-              idx <- 1:ncol(yc)
-              init <- as.vector(init)
-              trd <- sapply(idx, function(i) trdes(yc[, i], lambda = lambda, init = init[i]))
-            }
-            attributes(trd) <- attributes(y)
-            return(trd)
-          }
-)
-## for class zoo
-setMethod(f = "trdes",
-          signature = c(y = "zoo"),
-          definition = function(y, lambda, init = NULL){
-            yc <- as.matrix(coredata(y))
-            if(is.null(init)){
-              trd <- trdes(yc, lambda = lambda)
-            } else {
-              idx <- 1:ncol(yc)
-              init <- as.vector(init)
-              trd <- sapply(idx, function(i) trdes(yc[, i], lambda = lambda, init = init[i]))
-            }
-            attributes(trd) <- attributes(y)
-            return(trd)
-          }
-)

@@ -8,8 +8,6 @@
 \alias{returnseries,numeric-method}
 \alias{returnseries,timeSeries-method}
 \alias{returnseries,ts-method}
-\alias{returnseries,xts-method}
-\alias{returnseries,zoo-method}
 \title{
   Continuous and discrete returns
 }
@@ -25,7 +23,7 @@ returnseries(y, method = c("continuous", "discrete"), percentage = TRUE,
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
   \item{method}{Character, the type of return to be computed.}
   \item{percentage}{Logical, if \code{TRUE} (the default) the returns
   are expressed as percenatges.}

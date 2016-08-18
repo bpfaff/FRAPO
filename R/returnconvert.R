@@ -72,23 +72,3 @@ setMethod(f = "returnconvert",
             return(r)
           }
 )
-## for class xts
-setMethod(f = "returnconvert",
-          signature = c(y = "xts"),
-          definition = function(y, convdir = c("cont2disc", "disc2cont"), percentage = TRUE){
-            yc <- as.matrix(coredata(y))
-            r <- returnconvert(yc, convdir = convdir, percentage = percentage)
-            attributes(r) <- attributes(y)
-            return(r)
-          }
-)
-## for class zoo
-setMethod(f = "returnconvert",
-          signature = c(y = "zoo"),
-          definition = function(y, convdir = c("cont2disc", "disc2cont"), percentage = TRUE){
-            yc <- as.matrix(coredata(y))
-            r <- returnconvert(yc, convdir = convdir, percentage = percentage)
-            attributes(r) <- attributes(y)
-            return(r)
-          }
-)

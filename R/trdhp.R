@@ -62,20 +62,3 @@ setMethod(f = "trdhp",
             return(trd)
           }
 )
-## for class xts
-setMethod(f = "trdhp",
-          signature = c(y = "xts"),
-          definition = function(y, lambda){
-            trd <- trdhp(coredata(y), lambda = lambda)
-            attributes(trd) <- attributes(y)
-            return(trd)
-          }
-)
-## for class zoo
-setMethod(f = "trdhp",
-          signature = c(y = "zoo"),
-          definition = function(y, lambda){
-            attributes(trd) <- attributes(y)
-            return(trd)
-          }
-)

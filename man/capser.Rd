@@ -8,8 +8,6 @@
 \alias{capser,numeric-method}
 \alias{capser,timeSeries-method}
 \alias{capser,ts-method}
-\alias{capser,xts-method}
-\alias{capser,zoo-method}
 \title{
   Capping a series to bounds
 }
@@ -23,7 +21,7 @@ capser(y, min, max)
 
 \arguments{
   \item{y}{Objects of classes: numeric, matrix, data.frame, ts, mts,
-    timeSeries, zoo and xts are supported.}
+    and timeSeries are supported.}
   \item{min}{Numeric, minimum value for the series.}
   \item{max}{Numeric, maximim value for the series.}
 }

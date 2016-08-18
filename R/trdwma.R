@@ -76,25 +76,3 @@ setMethod(f = "trdwma",
             return(trd)
           }
 )
-## for class xts
-setMethod(f = "trdwma",
-          signature = c(y = "xts"),
-          definition = function(y, weights, trim = FALSE){
-            yc <- as.matrix(coredata(y))
-            trd <- trdwma(yc, weights = weights, trim = FALSE)
-            attributes(trd) <- attributes(y)
-            if(trim) trd <- window(trd, start = index(y)[length(weights)])
-            return(trd)
-          }
-)
-## for class zoo
-setMethod(f = "trdwma",
-          signature = c(y = "zoo"),
-          definition = function(y, weights, trim = FALSE){
-            yc <- as.matrix(coredata(y))
-            trd <- trdwma(yc, weights = weights, trim = FALSE)
-            attributes(trd) <- attributes(y)
-            if(trim) trd <- window(trd, start = index(y)[length(weights)])
-            return(trd)
-          }
-)

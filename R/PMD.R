@@ -1,7 +1,7 @@
 ##
 ## Most Diversified Portfolio
 ##
-PMD <- function(Returns, percentage = TRUE, ...){
+PMD <- function(Returns, percentage = TRUE, optctrl = ctrl(),...){
   if(is.null(dim(Returns))){
     stop("Argument for 'Returns' must be rectangular.\n")
   }
@@ -10,24 +10,17 @@ PMD <- function(Returns, percentage = TRUE, ...){
   C <- cov2cor(V)
   N <- ncol(Returns)
   ## QP
-  ## Budget constraint (equality)
-  a1 <- rep(1, N)
-  b1 <- 1
+  ## Budget
+  A <- matrix(rep(1, N), nrow = 1)
+  b <- 1
   ## Nonnegativity constraint (inequality)
-  a2 <- diag(N)
-  b2 <- rep(0, N)
-  ## combining restrictions
-  Amat <- cbind(a1, a2)
-  Bvec <- c(b1, b2)
-  meq <- c(1, rep(0, N))
-  Dvec <- rep(0, N)
-  ## Call to solver
-  opt <- solve.QP(Dmat = 2 * C, dvec = Dvec, Amat = Amat, bvec = Bvec, meq = meq)
+  nno1 <- nnoc(G = -diag(N), h = rep(0, N))
+  ## Call to cccp
+  opt <- cccp(P = C, q = rep(0, N), A = A, b = b, cList = list(nno1), optctrl = optctrl)
   ## Recovering weights for assets
-  w <- opt$solution / sqrt(diag(V))  
+  w <- drop(getx(opt)) / sqrt(diag(V))  
   names(w) <- colnames(Returns)
   wnorm <- w / sum(w)
   if(percentage) wnorm <- wnorm * 100
-  obj <- new("PortSol", weights = wnorm, opt = opt, type = "Most Diversifified", call = call)
-  return(obj)
+  new("PortSol", weights = wnorm, opt = list(opt), type = "Most Diversifified", call = call)
 }

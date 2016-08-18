@@ -5,13 +5,14 @@ citFooter("For BibTex versions of citations use: toBibtex(citation('FRAPO'))")
 citEntry(entry="Book",
          title = "Financial Risk Modelling and Portfolio Optimisation with R",
          author = personList(as.person("B. Pfaff")),
-	 publisher = "John Wiley & Sons, Ltd",
+         publisher = "John Wiley & Sons, Ltd",
          address      = "London",
-         year         = 2013,
+         edition      = "2nd",
+         year         = 2016,
          url          = "http://www.pfaffikus.de",
          
          textVersion = 
-         paste("Pfaff, B. (2013)", 
+         paste("Pfaff, B. (2016)", 
                "Financial Risk Modelling and Portfolio Optimisation with R,",
-               "John Wiley & Sons Ltd, London.")
+               "second edition", "John Wiley & Sons Ltd, London.")
 )

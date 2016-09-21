@@ -1,0 +1,56 @@
+import(methods, cccp, Rglpk, timeSeries)
+
+importFrom("graphics", "abline")
+importFrom("stats", "cov", "cov2cor", "embed", "na.fail")
+importFrom("utils", "combn", "file.edit")
+
+export(capser,
+       cr,
+       dr,
+       mrc,
+       PAveDD,
+       PCDaR,
+       PERC,
+       PGMV,
+       PMaxDD,
+       PMD,
+       PMinCDaR,
+       PMTD,
+       returnconvert,
+       returnseries,
+       rhow,
+       sqrm,
+       tdc,
+       trdbilson,
+       trdbinary,
+       trdes,
+       trdhp,
+       trdsma,
+       trdwma,
+       runEx,
+       editEx,
+       saveEx,
+       showEx,
+       listEx)
+
+exportMethods(capser,
+              DrawDowns,
+              plot,
+              returnconvert,
+              returnseries,
+              show,
+              Solution,
+              trdbilson,
+              trdbinary,
+              trdes,
+              trdhp,
+              trdsma,
+              trdwma,
+              update,
+              Weights)
+
+exportClasses(PortDD,
+              PortAdd,
+              PortCdd,
+              PortMdd,
+              PortSol)

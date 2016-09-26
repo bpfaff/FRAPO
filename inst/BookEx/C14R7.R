@@ -16,7 +16,7 @@ PuMuSim <- function(x){
     MUW <- MUans$pars
     MU <- U(w = MUW, mu = muSample, Sigma = sigmaSample, Lambda = riskA, L = targetR,
                    iperiod = Nt)
-    list(U = c(MU, PU), PUW = PUW, MUW = MUW)    
+    list(U = c(MU, PU), PUW = PUW, MUW = MUW)
 }
 ## Initializing objects
 Draws <- 100

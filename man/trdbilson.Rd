@@ -27,7 +27,7 @@ trdbilson(y, exponent)
 \details{
   The Bilson trend is calculated according to the formula:
   \deqn{
-    z = sign(y) \times |y|^{(1 - |y|^\alpha)}    
+    z = sign(y) \times |y|^{(1 - |y|^\alpha)}
     }
 }
 
@@ -64,7 +64,7 @@ trdbilson(y, exponent)
 \seealso{
   \code{\link{trdbinary}}, \code{\link{trdes}},
   \code{\link{trdhp}}, \code{\link{trdsma}},
-  \code{\link{trdwma}}, \code{\link{capser}} 
+  \code{\link{trdwma}}, \code{\link{capser}}
 }
 
 \examples{

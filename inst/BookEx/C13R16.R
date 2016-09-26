@@ -1,5 +1,5 @@
 ## Computing market risk measures
-## Long/Short risk 
+## Long/Short risk
 RiskFac <- -1.0 * sign(RE)
 ES <- matrix(0, ncol = NAssets, nrow = size)
 GpdEs <- function(x, nextremes = 30, method = "pwm", level = 0.95,

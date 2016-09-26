@@ -5,7 +5,7 @@
 erfc <- function(x) 2 * pnorm(x * sqrt(2), lower = FALSE)
 ## Downside
 f1 <- function(x, Lambda, eta){
-    (Lambda - 1) * exp(-x * eta^2) / sqrt(2 * pi) 
+    (Lambda - 1) * exp(-x * eta^2) / sqrt(2 * pi)
 }
 ## Upside
 f2 <- function(x, Lambda, eta){
@@ -26,7 +26,7 @@ U <- function(w, mu, Sigma, Lambda, L, iperiod){
     uval
 }
 ##
-## Probabilistic re-interpretation of utility 
+## Probabilistic re-interpretation of utility
 ## (unscaled log-density)
 ##
 PUL <- function(w, mu, Sigma, Lambda, L, iperiod, nu){

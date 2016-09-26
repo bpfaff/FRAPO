@@ -3,7 +3,7 @@ library(evir)
 library(ismev)
 ## Order statistics
 data(bmw)
-BmwLoss <- -1.0 * bmw * 100 
+BmwLoss <- -1.0 * bmw * 100
 Years <- format(attr(BmwLoss, "time"), "%Y")
 attr(BmwLoss, "years") <- Years
 Yearu <- unique(Years)

@@ -40,7 +40,7 @@ No methods defined with class "PortAdd" in the signature.
 
 \seealso{
   \code{"\linkS4class{PortSol}"}, \code{"\linkS4class{PortMdd}"},
-  \code{"\linkS4class{PortCdd}"}  
+  \code{"\linkS4class{PortCdd}"}
 }
 
 \examples{

@@ -28,7 +28,7 @@ for(i in 1:length(to)){
                              spec = mvspec,
                              constraints = BoxC)
   cd <- PCDaR(prices, alpha = DDalpha, bound = DDbound,
-              softBudget = TRUE) 
+              softBudget = TRUE)
   wMV[i, ] <- c(getWeights(mv))
   wCD[i, ] <- Weights(cd)
 }

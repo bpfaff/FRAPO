@@ -10,9 +10,9 @@ citEntry(entry="Book",
          edition      = "2nd",
          year         = 2016,
          url          = "http://www.pfaffikus.de",
-         
-         textVersion = 
-         paste("Pfaff, B. (2016)", 
+
+         textVersion =
+         paste("Pfaff, B. (2016)",
                "Financial Risk Modelling and Portfolio Optimisation with R,",
                "second edition", "John Wiley & Sons Ltd, London.")
 )

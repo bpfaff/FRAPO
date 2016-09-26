@@ -4,8 +4,8 @@ p <- seq(0.001, 0.05, 0.001)
 ghd.VaR <- abs(qghyp(p, ghdfit))
 hyp.VaR <- abs(qghyp(p, hypfit))
 nig.VaR <- abs(qghyp(p, nigfit))
-nor.VaR <- abs(qnorm(p, mean = mean(yret), sd = sd(c(yret[, 1])))) 
-emp.VaR <- abs(quantile(x = yret, probs = p)) 
+nor.VaR <- abs(qnorm(p, mean = mean(yret), sd = sd(c(yret[, 1]))))
+emp.VaR <- abs(quantile(x = yret, probs = p))
 # Plot of VaR
 plot(emp.VaR, type = "l", xlab = "", ylab = "VaR", axes = FALSE,
      ylim = range(c(hyp.VaR, nig.VaR, ghd.VaR, nor.VaR, emp.VaR)))

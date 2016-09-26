@@ -33,7 +33,7 @@ trdes(y, lambda, init = NULL)
 \details{
   The exponetially smoothed trend is calculated according to the formula:
   \deqn{
-    z_t = \lambda y_t + (1 - \lambda) * z_{t-1}    
+    z_t = \lambda y_t + (1 - \lambda) * z_{t-1}
     }
 }
 

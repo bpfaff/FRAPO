@@ -52,13 +52,13 @@ PCDaR(PriceData, alpha = 0.95, bound = 0.05, softBudget = FALSE, ...)
 
 \note{
   A warning is issued in case the solver had exit status not equal to
-  zero. 
+  zero.
 }
 
 \seealso{
     \code{"\linkS4class{PortSol}"}, \code{"\linkS4class{PortCdd}"},
     \code{"\linkS4class{PortDD}"}, \code{\link{PMaxDD}},
-    \code{\link{PAveDD}}, \code{\link{PMinCDaR}}  
+    \code{\link{PAveDD}}, \code{\link{PMinCDaR}}
 }
 
 \examples{

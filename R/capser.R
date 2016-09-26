@@ -1,6 +1,5 @@
 ##
-##
-## Generic for capser trend 
+## Generic for capser trend
 ##
 setGeneric(name = "capser", def = function(y, min, max){standardGeneric("capser")})
 ##

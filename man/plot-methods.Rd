@@ -12,7 +12,7 @@
 
 \usage{
 \S4method{plot}{PortDD}(x, main = NULL, xlab = NULL, ylab = NULL,
-col = c("black", "red"), grid = TRUE, invert = TRUE, \ldots)  
+col = c("black", "red"), grid = TRUE, invert = TRUE, \ldots)
 }
 
 \arguments{
@@ -24,9 +24,9 @@ col = c("black", "red"), grid = TRUE, invert = TRUE, \ldots)
   colors for the portfolio's draw downs and the optimal level.}
   \item{grid}{\code{Logical}: Whether to superimpose a grid on the plot.}
   \item{invert}{\code{Logical}: Whether the draw downs shall be plotted
-  as negative numbers; the default is \code{TRUE}.} 
+  as negative numbers; the default is \code{TRUE}.}
   \item{\ldots}{Ellipsis argument is passed to the generic \code{plot}
-  function.} 
+  function.}
 }
 
 \author{Bernhard Pfaff}

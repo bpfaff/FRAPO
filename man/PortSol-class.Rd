@@ -22,7 +22,7 @@
 \section{Objects from the Class}{
   Objects can be created by calls of the form \code{new("PortSol", ...)}.
   }
-       
+
 \section{Slots}{
   \describe{
     \item{\code{weights}:}{Numeric, vector of optimal weights.}
@@ -38,12 +38,12 @@
       portfolio type as text with the optimal weights from the object.}
     \item{Solution}{\code{signature(object = "PortSol")}: Returns the
       list object of the optimizer, \emph{i.e.} the slot \code{opt} from
-      the object.} 
+      the object.}
     \item{Weights}{\code{signature(object = "PortSol")}: Returns the list
       object of the optimizer, \emph{i.e.} the slot \code{weights} from
-      the object.} 
+      the object.}
     \item{update}{\code{signature(object = "PortSol")}: updates object
-      by calling the issuing function with altered arguments.}  
+      by calling the issuing function with altered arguments.}
   }
 }
 

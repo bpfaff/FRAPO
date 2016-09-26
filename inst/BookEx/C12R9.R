@@ -6,7 +6,7 @@ surfacePlot(surf, type = "filled.contour",
             main = "Convex Hull with Risk Surface:\nStd.Dev. of MRC and MDP-line")
 lines(x = dropt[, 2], y = dropt[, 1], col = "blue", lwd = 2)
 box()
-## Computing special points and plotting 
+## Computing special points and plotting
 frontier <- portfolioFrontier(data)
 MVP <- minvariancePoints(frontier)
 TGP <- tangencyPoints(frontier)

@@ -4,7 +4,7 @@ library(fBasics)
 ## Return calculation
 data(DowJones30)
 y <- timeSeries(DowJones30[, "HWP"], charvec =
-                as.character(DowJones30[, 1])) 
+                as.character(DowJones30[, 1]))
 yret <- na.omit(diff(log(y)) * 100)
 ## Fitting
 ef <- density(yret)

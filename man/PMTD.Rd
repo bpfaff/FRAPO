@@ -42,7 +42,7 @@ PMTD(Returns, method = c("EmpTC", "EVT"), k = NULL, percentage = TRUE,
 }
 
 \note{
-  The optimisation is conducted by calling \code{cccp()}. 
+  The optimisation is conducted by calling \code{cccp()}.
 }
 
 \seealso{

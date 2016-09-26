@@ -13,11 +13,11 @@
 \format{
   A data frame with 291 weekly observations of of the index and 89
   members of the FTSE 100 index. The sample starts in March 1991 and
-  ends in September 1997.     
+  ends in September 1997.
 }
 
 \details{
-  The data set was used in the first two references below. Stocks with 
+  The data set was used in the first two references below. Stocks with
   missing values during the sample period have been discarded. The data
   was downloaded from DATASTREAM and has been anonymized. The first
   columne refers to the index data itself. See the attached

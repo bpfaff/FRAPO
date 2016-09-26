@@ -27,7 +27,7 @@ tdc <- function(x, method = c("EmpTC", "EVT"), lower = TRUE, k = NULL, ...){
       td <- apply(idx, 2, function(y)
                   2 - sum((r[, y[1]] > m - k) | (r[, y[2]] > m - k)) / k)
     }
-  } 
+  }
   tdm <- diag(N)
   tdm[t(idx)] <- td
   tdm[lower.tri(tdm)] <- td

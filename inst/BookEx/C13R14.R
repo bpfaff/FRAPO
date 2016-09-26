@@ -1,7 +1,7 @@
 library(FRAPO)
 library(evir)
 library(forecast)
-## Data preparation 
+## Data preparation
 data(StockIndexAdjD)
 data(ESCBFX)
 PDaily <- timeSeries(StockIndexAdjD,

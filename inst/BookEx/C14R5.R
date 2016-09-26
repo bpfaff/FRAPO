@@ -13,7 +13,7 @@ R <- 100 * ((1 + returns(Assets, method = "discrete", percentage = FALSE))^12 - 
 Requity <- R[, c("GSPC", "RUA", "GDAXI", "FTSE")]
 ## Parameter settings/initialization
 muSample <- colMeans(Requity)
-sigmaSample <- cov(Requity) 
+sigmaSample <- cov(Requity)
 (targetR <- mean(muSample))
 targetR <- 10
 riskA <- 3

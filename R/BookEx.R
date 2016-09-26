@@ -33,7 +33,7 @@ saveEx <- function(Example){
 editEx <- function(Example, ...){
   Ex <- paste(Example, "R", sep = ".")
   saveEx(Example)
-  file.edit(Ex, ...)  
+  file.edit(Ex, ...)
 }
 ## Run an example
 runEx <- function(Example, ...){

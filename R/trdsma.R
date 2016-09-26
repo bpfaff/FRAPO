@@ -1,6 +1,5 @@
 ##
-##
-## Generic for trdsma trend 
+## Generic for trdsma trend
 ##
 setGeneric(name = "trdsma", def = function(y, n.periods, trim = FALSE){standardGeneric("trdsma")})
 ##
@@ -16,7 +15,7 @@ setMethod(f = "trdsma",
             }
             trd <- as.data.frame(apply(y, 2, trdsma, n.periods = n.periods, trim = trim), ncol = ncol(y))
             colnames(trd) <- colnames(y)
-            ifelse(trim, rownames(trd) <- rownames(y)[-c(1:(n.periods - 1))], rownames(trd) <- rownames(y))             
+            ifelse(trim, rownames(trd) <- rownames(y)[-c(1:(n.periods - 1))], rownames(trd) <- rownames(y))
             return(as.data.frame(trd))
           }
 )
@@ -47,7 +46,7 @@ setMethod(f = "trdsma",
             if(n.periods > length(y)){
               stop("\nNumber of periods is greater than length of series.\n")
             }
-            trd <- c(filter(y, filter = rep(1 / n.periods, n.periods), sides = 1))              
+            trd <- c(filter(y, filter = rep(1 / n.periods, n.periods), sides = 1))
             if(trim){
               trd <- na.omit(trd)
             }
@@ -60,7 +59,7 @@ setMethod(f = "trdsma",
           definition = function(y, n.periods, trim = FALSE){
             trd <- apply(y, 2, trdsma, n.periods = n.periods, trim = FALSE)
             trd <- timeSeries(trd, charvec = time(y))
-            if(trim) trd <- window(trd, start = time(y)[n.periods], end = end(y)) 
+            if(trim) trd <- window(trd, start = time(y)[n.periods], end = end(y))
             return(trd)
           }
 )

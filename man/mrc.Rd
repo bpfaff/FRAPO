@@ -9,7 +9,7 @@
 \description{
   This function returns the marginal contributions to portfolio risk,
   whereby the latter is defined in terms of the portfolio standard
-  deviation. 
+  deviation.
 }
 
 \usage{
@@ -31,7 +31,7 @@ mrc(weights, Sigma, percentage = TRUE)
 
 \value{
   \code{numeric}, the marginal risk contributions of the portfolio's
-  asset. 
+  asset.
 }
 
 \author{

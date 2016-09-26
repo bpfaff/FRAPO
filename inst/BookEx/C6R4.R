@@ -5,7 +5,7 @@ library(FRAPO)
 data(SP500)
 Idx <- SP500[, "QCOM"]
 L <- -1 * returnseries(Idx, method = "discrete", trim = TRUE)
-## Computing VaR (Normal & GLD) 99%, moving window 
+## Computing VaR (Normal & GLD) 99%, moving window
 ep <- 104:length(L)
 sp <- 1:length(ep)
 level <- 0.99
@@ -17,7 +17,7 @@ for(i in 1:length(sp)){
   VaRGld <- quagld(level, fit)
   VaRNor <- qnorm(level, mean(x), sd(x))
   VaR[i, ] <- c(VaRGld, VaRNor)
-  print(paste("Result for", ep[i], ":", VaRGld, "and", VaRNor)) 
+  print(paste("Result for", ep[i], ":", VaRGld, "and", VaRNor))
 }
 ## Summarising results
 Res <- cbind(L[105:length(L)], VaR[-nrow(VaR), ])

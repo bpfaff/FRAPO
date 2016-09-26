@@ -56,9 +56,9 @@ capser(y, min, max)
 \author{
   Bernhard Pfaff
 }
-\seealso{ 
+\seealso{
   \code{\link{trdbilson}}, \code{\link{trdbinary}}, \code{\link{trdes}},
-  \code{\link{trdhp}}, \code{\link{trdsma}}, \code{\link{trdwma}}  
+  \code{\link{trdhp}}, \code{\link{trdsma}}, \code{\link{trdwma}}
 }
 
 \examples{

@@ -7,7 +7,7 @@
 
 \description{
   This function returns the solution of the global minimum variance portfolio
-  (long-only). 
+  (long-only).
 }
 
 \usage{
@@ -31,7 +31,7 @@ PGMV(Returns, percentage = TRUE, optctrl = ctrl(), ...)
 }
 
 \note{
-   The optimisation is conducted by calling \code{cccp()}. 
+   The optimisation is conducted by calling \code{cccp()}.
 }
 
 \seealso{

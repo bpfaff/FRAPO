@@ -13,7 +13,7 @@
 }
 \description{
   Either continuous returns or discrete returns can be converted into
-  the other type. 
+  the other type.
 }
 \usage{
 returnconvert(y, convdir = c("cont2disc", "disc2cont"), percentage = TRUE)
@@ -41,11 +41,11 @@ returnconvert(y, convdir = c("cont2disc", "disc2cont"), percentage = TRUE)
       applied per column of the timeSeries object and an object of the
       same class is returned.}
    \item{y = "ts"}{Calculation of the returns. The attributes are
-  preserved and an object of the same class is returned.} 
+  preserved and an object of the same class is returned.}
    \item{y = "xts"}{Calculation of the returns. The attributes are
-  preserved and an object of the same class is returned.} 
+  preserved and an object of the same class is returned.}
    \item{y = "zoo"}{Calculation of the returns. The attributes are
-  preserved and an object of the same class is returned.} 
+  preserved and an object of the same class is returned.}
  }
 }
 

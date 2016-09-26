@@ -39,7 +39,7 @@ PMaxDD <- function(PriceData, MaxDD = 0.1, softBudget = FALSE, ...){
   b4 <- rep(0, J)
   ## a5: draw-down constraint (3)
   D1 <- -1.0 * diag(J)
-  udiag <- embed(1:J, 2)[, c(2, 1)] 
+  udiag <- embed(1:J, 2)[, c(2, 1)]
   D1[udiag] <- 1
   a5 <- cbind(matrix(0, ncol = N, nrow = J), D1)
   a5 <- a5[-J, ]
@@ -48,7 +48,7 @@ PMaxDD <- function(PriceData, MaxDD = 0.1, softBudget = FALSE, ...){
   ## a6: draw-down constraint (4)
   a6 <- c(rep(0, N), 1, rep(0, J - 1))
   d6 <- "=="
-  b6 <- 0  
+  b6 <- 0
   ## Combining restrictions
   Amat <- rbind(a1, a2, a3, a4, a5, a6)
   Dvec <- c(d1, d2, d3, d4, d5, d6)

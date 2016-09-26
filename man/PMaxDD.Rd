@@ -50,13 +50,13 @@ PMaxDD(PriceData, MaxDD = 0.1, softBudget = FALSE, ...)
 
 \note{
   A warning is issued in case the solver had exit status not equal to
-  zero. 
+  zero.
 }
 
 \seealso{
     \code{"\linkS4class{PortSol}"}, \code{"\linkS4class{PortMdd}"},
     \code{"\linkS4class{PortDD}"}, \code{\link{PCDaR}},
-    \code{\link{PAveDD}}, \code{\link{PMinCDaR}}  
+    \code{\link{PAveDD}}, \code{\link{PMinCDaR}}
 }
 
 \examples{

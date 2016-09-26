@@ -15,7 +15,7 @@ MuDMax <- apply(MUD, 2, function(x) max(x))
 ylims <- range(na.omit(c(PuDMax, MuDMax, PuDMin, MuDMin)))
 plot(cbind(1:SS, PuDMean), type = "p", col = "blue", pch = 17, cex = 1.2,
      ylim = ylims, ylab = "Relative deviations from 'true' utility",
-     xlab = "Sample Sizes", axes = FALSE) 
+     xlab = "Sample Sizes", axes = FALSE)
 points(1:SS, PuDMax, type = "p", col = "blue", cex = 1.2, pch = 22)
 points(1:SS, PuDMin, type = "p", col = "blue", cex = 1.2, pch = 22)
 points(1:SS, MuDMean, type = "p", col = "darkred", cex = 1.2, pch = 19)
@@ -26,7 +26,7 @@ arrows(x0 = 1:SS, y0 = PuDMin, y1 = PuDMax, code = 3, col = "blue",
 arrows(x0 = 1:SS, y0 = MuDMin, y1 = MuDMax, code = 3, col = "darkred",
        length = 0.0, angle = 90, lwd = 1.0)
 axis(1, at = 1:SS, Samples)
-axis(2, pretty(ylims), pretty(ylims), las = 2) 
+axis(2, pretty(ylims), pretty(ylims), las = 2)
 box()
 legend("topright", legend = c("PU mean deviation",
                        "PU min/max deviation",

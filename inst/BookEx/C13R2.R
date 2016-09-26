@@ -18,7 +18,7 @@ f1 <- function(x, ci, percent = TRUE){
   RE[NView] <- (LU[NView, 1] / Lobs[NView, 1] - 1)
   names(RE) <- ANames
   if(percent) RE <- RE * 100
-  return(RE)               
+  return(RE)
 }
 ReturnEst <- lapply(idx, f1, ci = 0.5)
 qv <- zoo(matrix(unlist(ReturnEst),

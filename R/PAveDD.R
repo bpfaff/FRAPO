@@ -44,7 +44,7 @@ PAveDD <- function(PriceData, AveDD = 0.1, softBudget = FALSE, ...){
   b5 <- rep(0, J)
   ## a6: draw-down constraint (3)
   D1 <- -1.0 * diag(J)
-  udiag <- embed(1:J, 2)[, c(2, 1)] 
+  udiag <- embed(1:J, 2)[, c(2, 1)]
   D1[udiag] <- 1
   a6 <- cbind(matrix(0, ncol = N, nrow = J), D1, matrix(0, ncol = J, nrow = J))
   a6 <- a6[-J, ]

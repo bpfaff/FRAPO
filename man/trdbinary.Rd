@@ -26,7 +26,7 @@ trdbinary(y)
 \details{
   The Binary trend is calculated according to the formula:
   \deqn{
-    z = sign(y) \times \min(|4 / \pi \arctan(y)|, 1)   
+    z = sign(y) \times \min(|4 / \pi \arctan(y)|, 1)
     }
 }
 
@@ -63,7 +63,7 @@ trdbinary(y)
 \seealso{
   \code{\link{trdbilson}}, \code{\link{trdes}},
   \code{\link{trdhp}}, \code{\link{trdsma}},
-  \code{\link{trdwma}}, \code{\link{capser}} 
+  \code{\link{trdwma}}, \code{\link{capser}}
 }
 
 \examples{

@@ -1,6 +1,5 @@
 ##
-##
-## Generic for trdbinary trend 
+## Generic for trdbinary trend
 ##
 setGeneric(name = "trdbinary", def = function(y){standardGeneric("trdbinary")})
 ##

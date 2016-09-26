@@ -5,7 +5,7 @@ PGMV <- function(Returns, percentage = TRUE, optctrl = ctrl(), ...){
   if(is.null(dim(Returns))){
     stop("Argument for 'Returns' must be rectangular.\n")
   }
-  call <- match.call()  
+  call <- match.call()
   V <- cov(Returns, ...)
   N <- ncol(Returns)
   ## Budget

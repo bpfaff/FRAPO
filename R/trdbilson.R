@@ -1,6 +1,5 @@
 ##
-##
-## Generic for trdbilson trend 
+## Generic for trdbilson trend
 ##
 setGeneric(name = "trdbilson", def = function(y, exponent){standardGeneric("trdbilson")})
 ##

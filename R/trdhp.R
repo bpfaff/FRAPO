@@ -1,6 +1,5 @@
 ##
-##
-## Generic for trdhp trend 
+## Generic for trdhp trend
 ##
 setGeneric(name = "trdhp", def = function(y, lambda){standardGeneric("trdhp")})
 ##

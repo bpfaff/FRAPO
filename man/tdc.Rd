@@ -30,7 +30,7 @@ tdc(x, method = c("EmpTC", "EVT"), lower = TRUE, k = NULL, ...)
   For a matrix or an object that can be coerced to it with \code{ncol(x)
   >= 2}, the pair wise tail dependencies are estimated
   non-parametrically and returned as a symmetric matrix. The threshold
-  value \code{k} is the upper/lower bound for the order statistics to be 
+  value \code{k} is the upper/lower bound for the order statistics to be
   considered. The diagonal elements are always equal to one, because a
   series has a dependence of one with itself, of course.
 }
@@ -42,7 +42,7 @@ tdc(x, method = c("EmpTC", "EVT"), lower = TRUE, k = NULL, ...)
 \references{
   Schmidt, R. and Stadtm\"uller, U., Nonparametric estimation of tail
   dependence, \emph{The Scandinavian Journal of Statistics}, 33,
-  307--335. 
+  307--335.
 }
 
 \author{

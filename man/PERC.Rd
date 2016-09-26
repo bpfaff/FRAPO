@@ -25,7 +25,7 @@ PERC(Sigma, par = NULL, percentage = TRUE, optctrl = ctrl(), ...)
 \details{
   The objective function is the standard deviation of the marginal risk
   contributions, which is minimal, \emph{i.e.} zero, if all
-  contributions are equal. The weights are rescaled to sum to unity. 
+  contributions are equal. The weights are rescaled to sum to unity.
 }
 
 \value{
@@ -35,7 +35,7 @@ PERC(Sigma, par = NULL, percentage = TRUE, optctrl = ctrl(), ...)
 \references{
   Maillard, S. and Roncalli, T. and Teiletche, J.: The Properties
   of Equally Weighted Risk Contribution Portfolios, \emph{Journal of
-  Portfolio Management}, Vol. 36, No. 4, Summer 2010, 60--70. 
+  Portfolio Management}, Vol. 36, No. 4, Summer 2010, 60--70.
 }
 
 \author{
@@ -44,7 +44,7 @@ PERC(Sigma, par = NULL, percentage = TRUE, optctrl = ctrl(), ...)
 
 \note{
   The optimisation is conducted by calling \code{nlminb()}. Hereby, the
-  arguments \code{lower = 0} and \code{upper = 1} have been specified.  
+  arguments \code{lower = 0} and \code{upper = 1} have been specified.
 }
 
 \seealso{

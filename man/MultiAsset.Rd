@@ -13,7 +13,7 @@
 \format{
   A data frame with 85 month-end observations of stock and bond indices
   and gold, represented by the ETF SPDR Gold. The sample starts at
-  2004-11-30 and ends in 2011-11-30.       
+  2004-11-30 and ends in 2011-11-30.
 }
 
 \details{
@@ -33,7 +33,7 @@
     \item{GREXP}{Germany: REX-Performance Index (Bonds)}
     \item{BG05.L}{United Kingdom: Gilt All Index (Bonds)}
     \item{GLD}{United States: SPDR Gold Shares (Commodities)}
-    }  
+    }
 }
 
 \source{

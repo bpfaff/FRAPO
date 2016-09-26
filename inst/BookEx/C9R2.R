@@ -33,5 +33,5 @@ opt <- optim(c(par1, par2, par3), LLCG, x = U, copC = copC,
              method = "L-BFGS-B",
              control = list(fnscale = -1, trace = 2),
              hessian = TRUE)
-## Variance-Covariance 
+## Variance-Covariance
 varcov <- round(solve(-opt$hessian), 4)

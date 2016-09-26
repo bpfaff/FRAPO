@@ -1,6 +1,6 @@
 library(FRAPO)
 library(copula)
-## S&P 500 
+## S&P 500
 data(INDTRACK6)
 ## Market and Asset Returns
 RM <- returnseries(INDTRACK6[1:260, 1], method = "discrete",
@@ -9,7 +9,7 @@ RA <- returnseries(INDTRACK6[1:260, -1], method = "discrete",
                    trim = TRUE)
 Beta <- apply(RA, 2, function(x) cov(x, RM) / var(RM))
 Tau <- apply(RA, 2, function(x) cor(x, RM, method = "kendall"))
-## Clayton Copula: Lower Tail Dependence 
+## Clayton Copula: Lower Tail Dependence
 ThetaC <- copClayton@iTau(Tau)
 LambdaL <- copClayton@lambdaL(ThetaC)
 ## Selecting Stocks below median; inverse log-weighted and scaled
@@ -34,7 +34,7 @@ RMEquity <- cumprod(RMo)
 LBEquity <- RAo[, IdxBeta]
 LBEquity[1, ] <- WBeta
 LBEquity <- rowSums(apply(LBEquity, 2, cumprod))
-## TD 
+## TD
 TDEquity <- RAo[, IdxTD]
 TDEquity[1, ] <- WTD
 TDEquity <- rowSums(apply(TDEquity, 2, cumprod))

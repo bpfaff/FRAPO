@@ -20,6 +20,6 @@ setClass("PortAdd", representation(AveDD = "numeric", DrawDown = "timeSeries"), 
 setClass("PortMdd", representation(MaxDD = "numeric", DrawDown = "timeSeries"), contains = "PortSol")
 ##
 ## Defining Class Union for draw down portfolios
-## 
+##
 setClassUnion("PortDD", c("PortAdd", "PortCdd", "PortMdd"))
 

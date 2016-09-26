@@ -21,7 +21,7 @@ plot(mc1[1:100], type = "l", ylim = range(cbind(mc1, mc2)),
      xlab = "", ylab = "X", main = "Progression of first-order Markov Chain")
 lines(mc2[1:100], col = "red")
 ## Expected value of stationarity distribution and estimates
-EfPop <- theta0 / (1 - theta1) 
+EfPop <- theta0 / (1 - theta1)
 m <- trunc(N / 2) ## burn-in
 EfEst1 <- mean(mc1[-c(1:m)])
 c(EfPop, EfEst1)

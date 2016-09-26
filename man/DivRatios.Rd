@@ -4,7 +4,7 @@
 \alias{rhow}
 
 \title{
-  Diversification Measures 
+  Diversification Measures
 }
 
 \description{
@@ -39,14 +39,14 @@ rhow(weights, Sigma)
   The concentration ration is defined as:
 
   \deqn{CR = \frac{\sum_{i = 1}^N (\omega_i \sigma_i)^2}{(\sum_{i = 1}^N
-  \omega_i \sigma_i)^2} 
+  \omega_i \sigma_i)^2}
   }
 
   and the volatility-weighted average correlation of the assets as:
 
   \deqn{\rho(\omega) = \frac{\sum_{i > j}^N (\omega_i \sigma_i \omega_j
   \sigma_j)\rho_{ij}}{\sum_{i > j}^N (\omega_i \sigma_i \omega_j
-  \sigma_j)}  
+  \sigma_j)}
   }
 
   The following equation between these measures does exist:
@@ -66,7 +66,7 @@ rhow(weights, Sigma)
 
   Choueifaty, Y. and Coignard, Y. and Reynier, J. (2011): Properties of
   the Most Diversified Portfolio, Working Paper, \url{http://papers.ssrn.com}
-  
+
 }
 
 \author{
@@ -86,7 +86,7 @@ DR <- dr(w, V)
 CR <- cr(w, V)
 RhoW <- rhow(w, V)
 test <- 1 / sqrt(RhoW * (1 - CR) + CR)
-all.equal(DR, test) 
+all.equal(DR, test)
 }
 
 \keyword{algebra}

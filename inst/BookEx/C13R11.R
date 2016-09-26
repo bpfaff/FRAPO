@@ -15,7 +15,7 @@ f0 <- function(v, p, Aeq, beq){
 }
 gf <- function(v, p, Aeq, beq){
     x <- exp(log(p) - 1 - crossprod(Aeq, v))
-    beq - Aeq %*% x 
+    beq - Aeq %*% x
 }
 ep <- function(x0, Aeq, beq, pprior){
     vopt <- try(optim(par = x0, fn = f0, gr = gf,

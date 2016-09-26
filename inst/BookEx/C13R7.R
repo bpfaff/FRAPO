@@ -1,5 +1,5 @@
 ## Prior distribution
-## Fitting of skewed Student's t distribution 
+## Fitting of skewed Student's t distribution
 MSTfit <- mvFit(R, method = "st")
 mu <- c(MSTfit@fit$estimated[["beta"]])
 S <- MSTfit@fit$estimated[["Omega"]]

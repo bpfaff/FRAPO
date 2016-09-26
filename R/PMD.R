@@ -5,7 +5,7 @@ PMD <- function(Returns, percentage = TRUE, optctrl = ctrl(),...){
   if(is.null(dim(Returns))){
     stop("Argument for 'Returns' must be rectangular.\n")
   }
-  call <- match.call()  
+  call <- match.call()
   V <- cov(Returns, ...)
   C <- cov2cor(V)
   N <- ncol(Returns)
@@ -18,7 +18,7 @@ PMD <- function(Returns, percentage = TRUE, optctrl = ctrl(),...){
   ## Call to cccp
   opt <- cccp(P = C, q = rep(0, N), A = A, b = b, cList = list(nno1), optctrl = optctrl)
   ## Recovering weights for assets
-  w <- drop(getx(opt)) / sqrt(diag(V))  
+  w <- drop(getx(opt)) / sqrt(diag(V))
   names(w) <- colnames(Returns)
   wnorm <- w / sum(w)
   if(percentage) wnorm <- wnorm * 100

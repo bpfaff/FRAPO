@@ -45,13 +45,13 @@ returnseries(y, method = c("continuous", "discrete"), percentage = TRUE,
       and an object of the same class is returned.}
    \item{y = "numeric"}{Calculation of the es trend.}
    \item{y = "timeSeries"}{The calculation is applied per column of the
-  timeSeries object and an object of the same class is returned.} 
+  timeSeries object and an object of the same class is returned.}
    \item{y = "ts"}{Calculation of the returns. The attributes are
-  preserved and an object of the same class is returned.}  
+  preserved and an object of the same class is returned.}
    \item{y = "xts"}{Calculation of the returns. The attributes are
-  preserved and an object of the same class is returned.} 
+  preserved and an object of the same class is returned.}
    \item{y = "zoo"}{Calculation of the returns. The attributes are
-  preserved and an object of the same class is returned.} 
+  preserved and an object of the same class is returned.}
  }
 }
 

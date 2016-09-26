@@ -1,6 +1,5 @@
 ##
-##
-## Generic for trdwma trend 
+## Generic for trdwma trend
 ##
 setGeneric(name = "trdwma", def = function(y, weights, trim = FALSE){standardGeneric("trdwma")})
 ##
@@ -16,7 +15,7 @@ setMethod(f = "trdwma",
             }
             trd <- as.data.frame(apply(y, 2, trdwma, weights = weights, trim = trim), ncol = ncol(y))
             colnames(trd) <- colnames(y)
-            ifelse(trim, rownames(trd) <- rownames(y)[-c(1:(weights - 1))], rownames(trd) <- rownames(y))             
+            ifelse(trim, rownames(trd) <- rownames(y)[-c(1:(weights - 1))], rownames(trd) <- rownames(y))
             return(as.data.frame(trd))
           }
 )
@@ -45,12 +44,12 @@ setMethod(f = "trdwma",
           definition = function(y, weights, trim = FALSE){
             weights <- as.numeric(weights)
             if(!(sum(weights) == 1)){
-              warning("\nThe sum of the weights is not equal to one.\n")            
+              warning("\nThe sum of the weights is not equal to one.\n")
             }
             if(length(weights) > length(y)){
               stop("\nNumber of weights is greater than length of series.\n")
             }
-            trd <- c(filter(y, filter = weights, sides = 1))              
+            trd <- c(filter(y, filter = weights, sides = 1))
             if(trim){
               trd <- trd[-c(1:(length(weights) -1))]
             }
@@ -62,7 +61,7 @@ setMethod(f = "trdwma",
           signature = c(y = "timeSeries"),
           definition = function(y, weights, trim = FALSE){
             trd <- apply(y, 2, trdwma, weights = weights, trim = FALSE)
-            if(trim) trd <- window(trd, start = time(y)[length(weights)], end = end(y)) 
+            if(trim) trd <- window(trd, start = time(y)[length(weights)], end = end(y))
             return(trd)
           }
 )

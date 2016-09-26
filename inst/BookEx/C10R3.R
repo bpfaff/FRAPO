@@ -15,7 +15,7 @@ for(i in DGP){
     assign(objname, lapply(eval(as.name(i)), function(x) x[1:j, ]))
   }
 }
-## Creating list objects with estimates of 
+## Creating list objects with estimates of
 ## location and dispersion for combinations of
 ## DGP, sample sizes and estimators
 ## initialising vector for list objects

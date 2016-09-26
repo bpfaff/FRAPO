@@ -2,7 +2,7 @@ PR1 <- function(SRoot, PRoot, mu, SigMax, lambda, delta, ...){
   Nassets <- nrow(SRoot)
   Nvar <- Nassets + 1
   ra <- 1 - lambda
-  ## objective function 
+  ## objective function
   f <- c(rep(0, Nassets), -1)
   ## cone constraint for returns
   C1 <- matrix(c(mu, -1) / delta / ra, nrow = 1)
@@ -11,7 +11,7 @@ PR1 <- function(SRoot, PRoot, mu, SigMax, lambda, delta, ...){
   ## non-negativity constraint
   C3 <- cbind(diag(Nassets), rep(0, Nassets))
   ## budget constraint (non-overinvestment)
-  C4 <- matrix(c(rep(-1, Nassets), 0), nrow = 1) 
+  C4 <- matrix(c(rep(-1, Nassets), 0), nrow = 1)
   C <- rbind(C1,
              C2,
              C3,

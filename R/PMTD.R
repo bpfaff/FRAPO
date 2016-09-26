@@ -18,7 +18,7 @@ PMTD <- function(Returns, method = c("EmpTC", "EVT"), k = NULL,
   ## Call to cccp
   opt <- cccp(P = 2 * V, q = rep(0, N), A = A, b = b, cList = list(nno1), optctrl = optctrl)
   w <- drop(getx(opt))
-  ## re-scaling weights by assets' sd 
+  ## re-scaling weights by assets' sd
   sd <- sqrt(diag(cov(Returns)))
   w <- w / sd
   w <- w / sum(w)

@@ -10,7 +10,7 @@
 \title{Class \code{"PortDD"}}
 
 \description{
-  Class union of \code{"PortAdd"}, \code{"PortCdd"} and \code{"PortMdd"} 
+  Class union of \code{"PortAdd"}, \code{"PortCdd"} and \code{"PortMdd"}
 }
 
 \section{Objects from the Class}{
@@ -19,7 +19,7 @@
 \section{Methods}{
   \describe{
     \item{DrawDowns}{\code{signature(object = "PortDD")}: Returns the
-          portfolio draw downs.} 
+          portfolio draw downs.}
     \item{plot}{\code{signature(object = "PortDD")}: Time series plot of
           draw downs.}
   }
@@ -37,7 +37,7 @@
 \seealso{
   \code{"\linkS4class{PortAdd}"}, \code{"\linkS4class{PortMdd}"},
   \code{"\linkS4class{PortCdd}"}, \code{\link{PMinCDaR}},
-  \code{\link{PCDaR}}, \code{\link{PAveDD}}, \code{\link{PMaxDD}}   
+  \code{\link{PCDaR}}, \code{\link{PAveDD}}, \code{\link{PMaxDD}}
 }
 
 \examples{

@@ -4,7 +4,7 @@ Lp <- function(RE, ES, Buffer, ub = 0.4){
   ## Initialise LHS matrix and RHS vector
   nvar <- length(obj)
   ## Wealth constraint
-  a1 <- rep(1, nvar) 
+  a1 <- rep(1, nvar)
   b1 <- 1
   d1 <- "<="
   ## Risk constraint

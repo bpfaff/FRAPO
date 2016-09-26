@@ -1,6 +1,5 @@
 ##
-##
-## Generic for trdes trend 
+## Generic for trdes trend
 ##
 setGeneric(name = "trdes", def = function(y, lambda, init = NULL){standardGeneric("trdes")})
 ##

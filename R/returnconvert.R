@@ -1,5 +1,4 @@
 ##
-##
 ## Generic for returnconvert
 ##
 setGeneric(name = "returnconvert", def = function(y, convdir = c("cont2disc", "disc2cont"), percentage = TRUE){standardGeneric("returnconvert")})

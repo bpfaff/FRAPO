@@ -71,7 +71,7 @@ trdhp(y, lambda)
 \seealso{
   \code{\link{trdbinary}}, \code{\link{trdes}},
   \code{\link{trdbilson}}, \code{\link{trdsma}},
-  \code{\link{trdwma}}, \code{\link{capser}}  
+  \code{\link{trdwma}}, \code{\link{capser}}
 }
 
 \examples{

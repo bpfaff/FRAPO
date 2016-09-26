@@ -1,7 +1,7 @@
 PMV <- function(SRoot, mu, SigMax, lambda, ...){
   Nassets <- length(mu)
   ra <- 1 - lambda
-  f <- -mu 
+  f <- -mu
   C1 <- matrix(rep(0, Nassets), nrow = 1)
   ## no cone, but quadratic constraint
   C2 <- diag(Nassets)

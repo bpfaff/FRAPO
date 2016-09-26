@@ -25,12 +25,12 @@ sqrm(x, ...)
   whereby \eqn{D} is a diagonal matrix. This is only achieved if the eigen
   vectors of the \eqn{(n \times n)} matrix \eqn{A} constitute a basis of
   dimension \eqn{n}. The square root of \eqn{A} is then \eqn{A^{1/2} = V
-  D^{1/2} V'}.  
+  D^{1/2} V'}.
 }
 
 \value{
   A \code{matrix} object and a scalar in case a \eqn{(1 \times 1)} matrix has been
-  provided. 
+  provided.
 }
 
 \author{

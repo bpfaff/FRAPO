@@ -1,8 +1,7 @@
 ##
-##
 ## Generic for returnseries
 ##
-setGeneric(name = "returnseries", def = function(y, method = c("continuous", "discrete"), percentage = TRUE, trim = FALSE, compound = FALSE){standardGeneric("returnseries")}) 
+setGeneric(name = "returnseries", def = function(y, method = c("continuous", "discrete"), percentage = TRUE, trim = FALSE, compound = FALSE){standardGeneric("returnseries")})
 ##
 ## Methods for returnseries
 ## (in alphabetical order)
@@ -16,7 +15,7 @@ setMethod(f = "returnseries",
             }
             ret <- as.data.frame(apply(y, 2, returnseries, method = method, percentage = percentage, trim = trim, compound = compound), ncol = ncol(y))
             colnames(ret) <- colnames(y)
-            ifelse(trim, rownames(ret) <- rownames(y)[-1], rownames(ret) <- rownames(y)) 
+            ifelse(trim, rownames(ret) <- rownames(y)[-1], rownames(ret) <- rownames(y))
             return(ret)
           }
 )
@@ -70,7 +69,7 @@ setMethod(f = "returnseries",
           definition = function(y, method = c("continuous", "discrete"), percentage = TRUE, trim = FALSE, compound = FALSE){
             ret <- apply(y, 2, returnseries, method = method, percentage = percentage, trim = FALSE, compound = compound)
             ret <- timeSeries(ret, charvec = time(y))
-            if(trim) ret <- window(ret, start = time(y)[2], end = end(y)) 
+            if(trim) ret <- window(ret, start = time(y)[2], end = end(y))
             return(ret)
           }
 )

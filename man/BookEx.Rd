@@ -37,7 +37,7 @@ runEx(Example, ...)
   \code{editor = "foo"}, wherey \code{foo} is the name of the editor to
   be used.\cr
   The ellipsis arguments in the function \code{runEx()} are passed down
-  to the function \code{source()}. 
+  to the function \code{source()}.
 }
 
 \value{
@@ -59,10 +59,10 @@ runEx(Example, ...)
 }
 
 \seealso{
-  \code{\link{file.edit}}, \code{\link{source}} 
+  \code{\link{file.edit}}, \code{\link{source}}
 }
 
-\examples{  
+\examples{
 \dontrun{
 listEx()
 showEx(Example = "Part1Chapter3Ex2")

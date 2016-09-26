@@ -8,7 +8,7 @@
 \description{
   This function returns the result of a long-only portfolio optimization
   whereby the portfolio's (historic) conditional draw down at risk is
-  minimized. 
+  minimized.
 }
 
 \usage{
@@ -29,7 +29,7 @@ PMinCDaR(PriceData, alpha = 0.95, softBudget = FALSE, ...)
   This function implements a long-only portfolio optimisation for a
   minimum conditional draw down at risk (see references below). The
   problem can be stated in the form of a linear program and GLPK is used
-  as solver. 
+  as solver.
 }
 
 \value{
@@ -52,13 +52,13 @@ PMinCDaR(PriceData, alpha = 0.95, softBudget = FALSE, ...)
 
 \note{
   A warning is issued in case the solver had exit status not equal to
-  zero. 
+  zero.
 }
 
 \seealso{
     \code{"\linkS4class{PortSol}"}, \code{"\linkS4class{PortCdd}"},
     \code{"\linkS4class{PortDD}"}, \code{\link{PMaxDD}},
-    \code{\link{PAveDD}}, \code{\link{PCDaR}}  
+    \code{\link{PAveDD}}, \code{\link{PCDaR}}
 }
 
 \examples{

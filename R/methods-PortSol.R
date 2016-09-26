@@ -19,7 +19,7 @@ setMethod(f = "show", signature(object = "PortSol"), definition = function(objec
   print(round(Weights(object), 4))
   cat("\n")
 })
-## 
+##
 ## Solution-method
 ##
 setMethod(f = "Solution", signature(object = "PortSol"), definition = function(object){

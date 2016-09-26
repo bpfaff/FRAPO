@@ -7,7 +7,7 @@
 
 \description{
   This function returns the solution of the most diversified portfolio
-  (long-only). 
+  (long-only).
 }
 
 \usage{
@@ -49,7 +49,7 @@ PMD(Returns, percentage = TRUE, optctrl = ctrl(),...)
 }
 
 \note{
-  The optimisation is conducted by calling \code{cccp()}. 
+  The optimisation is conducted by calling \code{cccp()}.
 }
 
 \seealso{

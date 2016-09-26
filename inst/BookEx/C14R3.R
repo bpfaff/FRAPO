@@ -24,7 +24,7 @@ for(i in 2:MCMCsize){
 acrID <- acID / MCMCsize * 100
 ar1ID <- ar(omega3ID, order.max = 1)$ar
 omega3IDHat <- mean(omega3ID[-c(1:BurnIn)]) * 100
-## MH: random walk sampler 
+## MH: random walk sampler
 for(i in 2:MCMCsize){
     y1 <- omega3RW1[i - 1] + 0.5 * rnorm(1)
     if(y1 > 1 || y1 < 0) y1 <- -Inf

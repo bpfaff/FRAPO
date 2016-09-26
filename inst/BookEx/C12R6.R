@@ -1,8 +1,8 @@
 ## Portfolio equities of strategies
-MVRetFac <- 1 + rowSums(wMVL1 * RDPback) / 100  
+MVRetFac <- 1 + rowSums(wMVL1 * RDPback) / 100
 MVRetFac[1] <- 100
 MVPort <- timeSeries(cumprod(MVRetFac), charvec = names(MVRetFac))
-CDRetFac <- 1 + rowSums(wCDL1 * RDPback) / 100  
+CDRetFac <- 1 + rowSums(wCDL1 * RDPback) / 100
 CDRetFac[1] <- 100
 CDPort <- timeSeries(cumprod(CDRetFac), charvec = names(CDRetFac))
 ## Progression of wealth

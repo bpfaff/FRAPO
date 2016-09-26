@@ -30,4 +30,4 @@ km <- function(pf, bm, scale){
 }
 LbKM <- km(LbRetO, BmRetO, scale = 52)
 TdKM <- km(TdRetO, BmRetO, scale = 52)
-     
+
